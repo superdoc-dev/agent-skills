@@ -46,14 +46,14 @@ Core SuperDoc usage guidelines for vanilla JavaScript applications. Contains ini
 ## Installation
 
 ```bash
-npx skills add superdoc-dev/superdoc-agent-skills
+npx skills add superdoc-dev/agent-skills
 ```
 
 Or install specific skills:
 
 ```bash
-npx skills add superdoc-dev/superdoc-agent-skills/superdoc-react
-npx skills add superdoc-dev/superdoc-agent-skills/superdoc-core
+npx skills add superdoc-dev/agent-skills/superdoc-react
+npx skills add superdoc-dev/agent-skills/superdoc-core
 ```
 
 ## Usage
