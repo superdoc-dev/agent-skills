@@ -23,7 +23,7 @@ Reference these guidelines when:
 ## Installation
 
 ```bash
-npm install @superdoc/react
+npm install @superdoc-dev/react
 ```
 
 > `superdoc` is included as a dependency - no separate installation needed.
@@ -31,8 +31,8 @@ npm install @superdoc/react
 ## Quick Start
 
 ```tsx
-import { SuperDocEditor } from '@superdoc/react';
-import '@superdoc/react/style.css';
+import { SuperDocEditor } from '@superdoc-dev/react';
+import '@superdoc-dev/react/style.css';
 
 function App() {
   return (
@@ -96,7 +96,7 @@ Access SuperDoc methods via ref:
 
 ```tsx
 import { useRef } from 'react';
-import { SuperDocEditor, SuperDocRef } from '@superdoc/react';
+import { SuperDocEditor, SuperDocRef } from '@superdoc-dev/react';
 
 function Editor() {
   const editorRef = useRef<SuperDocRef>(null);
@@ -208,8 +208,8 @@ function FileEditor() {
 // app/editor/page.tsx
 'use client';
 
-import { SuperDocEditor } from '@superdoc/react';
-import '@superdoc/react/style.css';
+import { SuperDocEditor } from '@superdoc-dev/react';
+import '@superdoc-dev/react/style.css';
 
 export default function EditorPage() {
   return (
@@ -232,7 +232,7 @@ For custom loading UI during SSR:
 import dynamic from 'next/dynamic';
 
 const SuperDocEditor = dynamic(
-  () => import('@superdoc/react').then(mod => mod.SuperDocEditor),
+  () => import('@superdoc-dev/react').then(mod => mod.SuperDocEditor),
   {
     ssr: false,
     loading: () => <div>Loading editor...</div>
@@ -291,7 +291,7 @@ import type {
   SuperDocModules,
   SuperDocConfig,
   SuperDocInstance,
-} from '@superdoc/react';
+} from '@superdoc-dev/react';
 ```
 
 Types are extracted from the `superdoc` package, ensuring they stay in sync.
@@ -307,4 +307,4 @@ Types are extracted from the `superdoc` package, ensuring they stay in sync.
 
 - [Documentation](https://docs.superdoc.dev/getting-started/frameworks/react)
 - [GitHub](https://github.com/superdoc-dev/superdoc)
-- [npm](https://www.npmjs.com/package/@superdoc/react)
+- [npm](https://www.npmjs.com/package/@superdoc-dev/react)
