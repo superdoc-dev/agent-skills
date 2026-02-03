@@ -275,6 +275,7 @@ These props trigger a full instance rebuild when changed:
 | `users` | Users list changed |
 | `modules` | Module configuration changed |
 | `role` | Permission level changed |
+| `hideToolbar` | Toolbar DOM structure changed |
 
 Other props like `documentMode` and callbacks are handled efficiently without rebuild.
 
