@@ -343,8 +343,19 @@ Both systems work together to provide seamless editing and viewing experiences.
 | Node.js | 16+ |
 | Modern browser | ES2020 support |
 
+## Examples
+
+| Example | Description |
+|---------|-------------|
+| [React + TypeScript](https://github.com/superdoc-dev/superdoc/tree/main/examples/getting-started/react) | React wrapper usage |
+| [Next.js SSR](https://github.com/superdoc-dev/superdoc/tree/main/examples/integrations/nextjs-ssr) | Next.js App Router |
+
+> For React/Next.js projects, prefer `@superdoc-dev/react` wrapper over core package.
+
 ## Links
 
 - [Documentation](https://docs.superdoc.dev)
+- [Configuration](https://docs.superdoc.dev/core/superdoc/configuration)
+- [Methods](https://docs.superdoc.dev/core/superdoc/methods)
 - [GitHub](https://github.com/superdoc-dev/superdoc)
 - [npm](https://www.npmjs.com/package/superdoc)

@@ -81,7 +81,7 @@ Each skill contains:
 - [SuperDoc Documentation](https://docs.superdoc.dev)
 - [SuperDoc GitHub](https://github.com/superdoc-dev/superdoc)
 - [npm: superdoc](https://www.npmjs.com/package/superdoc)
-- [npm: @superdoc/react](https://www.npmjs.com/package/@superdoc/react)
+- [npm: @superdoc-dev/react](https://www.npmjs.com/package/@superdoc-dev/react)
 
 ## License
 

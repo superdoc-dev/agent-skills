@@ -202,12 +202,32 @@ function FileEditor() {
 
 ## Next.js Integration
 
+The React wrapper handles SSR automatically (renders `null` or `renderLoading()` on server, initializes after hydration).
+
 ### App Router (Next.js 13+)
 
 ```tsx
 // app/editor/page.tsx
 'use client';
 
+import { SuperDocEditor } from '@superdoc-dev/react';
+import '@superdoc-dev/react/style.css';
+
+export default function EditorPage() {
+  return (
+    <SuperDocEditor
+      document="/sample.docx"
+      documentMode="editing"
+      style={{ height: '100vh' }}
+    />
+  );
+}
+```
+
+### Pages Router
+
+```tsx
+// pages/editor.tsx
 import { SuperDocEditor } from '@superdoc-dev/react';
 import '@superdoc-dev/react/style.css';
 
@@ -238,6 +258,23 @@ const SuperDocEditor = dynamic(
     loading: () => <div>Loading editor...</div>
   }
 );
+```
+
+### CSS Import in Layout
+
+Import styles once in your layout:
+
+```tsx
+// app/layout.tsx
+import '@superdoc-dev/react/style.css';
+
+export default function RootLayout({ children }) {
+  return (
+    <html>
+      <body>{children}</body>
+    </html>
+  );
+}
 ```
 
 ## Collaboration Setup
@@ -303,8 +340,16 @@ Types are extracted from the `superdoc` package, ensuring they stay in sync.
 | React | 16.8.0+ |
 | Node.js | 16+ |
 
+## Examples
+
+| Example | Description |
+|---------|-------------|
+| [React + TypeScript](https://github.com/superdoc-dev/superdoc/tree/main/examples/getting-started/react) | File upload, mode switching, export |
+| [Next.js SSR](https://github.com/superdoc-dev/superdoc/tree/main/examples/integrations/nextjs-ssr) | App Router with SSR support |
+
 ## Links
 
 - [Documentation](https://docs.superdoc.dev/getting-started/frameworks/react)
+- [Next.js Guide](https://docs.superdoc.dev/getting-started/frameworks/nextjs)
 - [GitHub](https://github.com/superdoc-dev/superdoc)
 - [npm](https://www.npmjs.com/package/@superdoc-dev/react)
