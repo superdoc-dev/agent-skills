@@ -347,8 +347,8 @@ Both systems work together to provide seamless editing and viewing experiences.
 
 | Example | Description |
 |---------|-------------|
-| [React + TypeScript](https://github.com/superdoc-dev/superdoc/tree/main/examples/getting-started/react) | React wrapper usage |
-| [Next.js SSR](https://github.com/superdoc-dev/superdoc/tree/main/examples/integrations/nextjs-ssr) | Next.js App Router |
+| [React + TypeScript](https://github.com/superdoc/docx-editor/tree/main/examples/getting-started/react) | React wrapper usage |
+| [Next.js SSR](https://github.com/superdoc/docx-editor/tree/main/examples/integrations/nextjs-ssr) | Next.js App Router |
 
 > For React/Next.js projects, prefer `@superdoc-dev/react` wrapper over core package.
 
@@ -357,5 +357,5 @@ Both systems work together to provide seamless editing and viewing experiences.
 - [Documentation](https://docs.superdoc.dev)
 - [Configuration](https://docs.superdoc.dev/core/superdoc/configuration)
 - [Methods](https://docs.superdoc.dev/core/superdoc/methods)
-- [GitHub](https://github.com/superdoc-dev/superdoc)
+- [GitHub](https://github.com/superdoc/docx-editor)
 - [npm](https://www.npmjs.com/package/superdoc)

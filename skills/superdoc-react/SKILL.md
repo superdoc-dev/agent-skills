@@ -344,12 +344,12 @@ Types are extracted from the `superdoc` package, ensuring they stay in sync.
 
 | Example | Description |
 |---------|-------------|
-| [React + TypeScript](https://github.com/superdoc-dev/superdoc/tree/main/examples/getting-started/react) | File upload, mode switching, export |
-| [Next.js SSR](https://github.com/superdoc-dev/superdoc/tree/main/examples/integrations/nextjs-ssr) | App Router with SSR support |
+| [React + TypeScript](https://github.com/superdoc/docx-editor/tree/main/examples/getting-started/react) | File upload, mode switching, export |
+| [Next.js SSR](https://github.com/superdoc/docx-editor/tree/main/examples/integrations/nextjs-ssr) | App Router with SSR support |
 
 ## Links
 
 - [Documentation](https://docs.superdoc.dev/getting-started/frameworks/react)
 - [Next.js Guide](https://docs.superdoc.dev/getting-started/frameworks/nextjs)
-- [GitHub](https://github.com/superdoc-dev/superdoc)
+- [GitHub](https://github.com/superdoc/docx-editor)
 - [npm](https://www.npmjs.com/package/@superdoc-dev/react)
